@@ -34,6 +34,7 @@ def generate_data():
             "Bridging the Gap",
         ]
     )
+
     valuable = random.choice(["Yes", "No", "Maybe"])
     challenges = random.choice(["Yes", "No", "Maybe"])
     much = random.choice(["Yes", "No", "Maybe"])
