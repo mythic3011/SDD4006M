@@ -1,0 +1,202 @@
+body { /* Basic settings in the textarea */
+	margin: 0px;
+	font-family:Verdana, Geneva, Tahoma, sans-serif;
+background-color: #ddd;
+	background-size:cover;
+   background-repeat:no-repeat;
+}
+
+
+/* The basic setting of top and bottom navigation bar */
+.navbar {/* top navi bar basic settings */
+	width: 100%;
+	height: 48px;
+	overflow: hidden;
+	background-color: darkslateblue;
+	color: lightblue;
+	position: fixed;
+	transition: background-color 0.5s ease;/* 0.5 seconds transition */
+  }
+  .navbar photo{
+	float: left;/* left for the website logo*/
+	
+	max-height: 48px;
+	display:auto;
+  }
+  
+  .navbar a {/* top navi bar href settings */
+	float: right;/* right side bar */
+	display: block;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border: 2px solid #888888;
+	transition: background-color 0.5s ease;
+  }
+  
+  .navbar a:hover {/* add animation to the top navigation bar */
+	background-color: #ddd;
+	color: black;
+	transition: background-color 0.5s ease;
+  }
+.bottomDiv {
+	/* botton navi bar basic settings */
+	bottom: 0;
+	width: 100%;
+	height: 50px; 
+	background-color: darkslateblue;
+	z-index: 9999;/* will not be blocked*/
+	text-align:left ;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	color: #f2f2f2;
+  }
+  
+  .bottomDiv a {	/* botton navi bar href settings */
+	float: left;
+	display: block;
+	color: #f2f2f2;
+	text-decoration: none;
+	font-size: 15px;
+	
+  }
+  
+  .bottomDiv a:hover {	/* botton navi bar animations */
+	background-color: #ddd;
+	color: black;
+  }
+
+  .smallphoto2{	/* botton navi bar logo*/
+	height:25px;
+		width: 33%;
+		color: white;
+	}
+  /* The basic setting of top and bottom navigation bar */
+#flex-container {
+	
+	display: flex;
+	flex-flow: row wrap;
+}
+
+	/* Display welcome and the game logo */
+#header {
+	
+	border: 1px solid black;
+	margin: 5px;
+	padding: 15px;
+	box-shadow: 5px 5px 5px #888888;
+}
+
+#header {
+	order: 1;
+	width: 100%;
+	height: 170px;
+	display:fixed;
+	color: white;
+	
+}
+/* Display welcome and the game logo */
+
+/* A line for the 4 fractions or regions */
+#t3bro {
+	order: 2;
+	border: 1px solid black;
+	display: flex;
+	flex-flow: row wrap;
+	box-shadow: 5px 5px 5px #888888;
+	text-align: center;
+	width: 100%;
+	justify-content: center;
+    align-items: center; /* Center the item */
+}
+
+
+#ofn,#Ein,#Trio,#Rus{/* auto adjust the size of four photos */
+
+	width: 24.8%;
+	height: 170px;
+	border: 1px solid black;
+	background-size: cover; 
+ background-position: center; 
+ background-repeat: no-repeat; 
+	
+
+}
+/*ofn photo and its transitions*/
+#ofn{
+ background-image: url('./digi/20231009_153301.jpg'); 
+ color:darkblue;
+ transition: background-image 2s ease;
+}
+#ofn:hover{
+	background-image: url('./digi/what.webp'); 
+	color: transparent;
+	transition: background-image 2s ease;
+   }
+/*ofn photo and its transitions*/
+
+/*Trimuvate photo and its transitions*/
+#Trio{
+	background-image: url('./digi/source.webp'); 
+	color: red;
+	transition: background-image 2s ease;
+}
+#Trio:hover{
+	background-image: url('./digi/solve.jpg'); 
+	color: transparent;
+	transition: background-image 2s ease;
+   }
+   /*Trimuvate photo and its transitions*/
+
+   /*UnityPakt photo and its transitions*/
+#Ein{
+	background-image: url('./digi/age2.jpg');
+	color:cyan;
+	transition: background-image 2s ease;
+}
+#Ein:hover{
+	background-image: url('./digi/age.png');
+	color:transparent;
+	transition: background-image 2s ease;
+}
+/*UnityPakt photo and its transitions*/
+
+/*Russia photo and its transitions*/
+#Rus{
+   background-image: url('digi/map.gif'); 
+   color: darkgoldenrod;
+   transition: background-image 2s ease;
+}
+#Rus:hover{
+	background-image: url('./digi/india.webp'); 
+	color: transparent;
+	transition: background-image 2s ease;
+ }
+/*Russia photo and its transitions*/
+
+.responsive-image {
+	width: 66%;
+	height: auto;
+}
+.responsive-image2 {
+	width: 20%;
+	height: auto;
+}
+/*Content and topic base settings*/
+#topic{
+	font-size: 35px;
+	color: white;
+
+}
+#content{
+	font-size: 15px;
+	color: white;
+}
+
+
+
+
+
+
+
+
