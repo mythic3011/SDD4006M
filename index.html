@@ -24,7 +24,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <header class="border-b border-gray-300 py-4">
-    <nav class="navbar" id="navbar" x-data="{navbarOpen:false}">
+    <nav class="navbar" id="navbar">
         <div class="container flex flex-wrap px-4 py-2 mx-auto flex items-center justify-between lg:space-x-4">
             <a class="block mt-4 hover:underline hover:no-underline transition duration-200 ease-in-out border-2 border-transparent border-solid rounded-lg px-4 py-2"
                href="index.html">
@@ -38,8 +38,7 @@
                           stroke-width="2"></path>
                 </svg>
             </button>
-            <div :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
-                 class="items-center justify-center w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0">
+            <div class="{'hidden':!navbarOpen,'flex':navbarOpen}">
                 <ul class="flex flex-col lg:flex-row items-center">
                     <li>
                         <a class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition"
@@ -176,9 +175,9 @@
             </p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
-            <h2 class="text-left text-2xl font-medium text-gray-600" id="about-h2-2">Older Generation (Aged 55 and
+            <h2 class="text-left text-2xl font-medium text-gray-600">Older Generation (Aged 55 and
                 Over):</h2>
-            <p class="text-left p-2" id="about-p2">
+            <p class="text-left p-2">
                 Challenges in Access: Older adults face challenges related to internet access. While some are
                 tech-savvy, others struggle due to limited exposure or lack of familiarity.
                 Educational Impact: Bridging the digital divide for older generations requires expanding digital
@@ -189,15 +188,17 @@
             </p>
         </div>
     </div>
-    </section>
+</section>
 <section class="hero py-4 py-8 md:px-24">
     <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">REASONS OF THE DIVIDE</h1>
     <div class="about-div">
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 class="text-left text-2xl font-medium text-gray-600">Age-Related Issues:</h2>
             <p class="text-left p-2">
-                Description: Different age groups have varying levels of access to technology. Younger generations (below
-                thirty) are more likely to be fully connected and digitally literate, while older adults (over sixty-five)
+                Description: Different age groups have varying levels of access to technology. Younger generations
+                (below
+                thirty) are more likely to be fully connected and digitally literate, while older adults (over
+                sixty-five)
                 may lack access or choose not to use technology.
                 Reasons: Lack of education about technology benefits and lifestyle situations that don’t necessitate
                 connectivity.
@@ -207,14 +208,16 @@
             <h2 class="text-left text-2xl font-medium text-gray-600">Socioeconomic Factors:</h2>
             <p class="text-left p-2">
                 Description: The digital divide mirrors income, education, and social standing disparities worldwide.
-                People with higher income and education levels tend to have better access to technology and the internet.
+                People with higher income and education levels tend to have better access to technology and the
+                internet.
                 Reasons: Socioeconomic gaps contribute to unequal access, exacerbating overall inequalities.
             </p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 class="text-left text-2xl font-medium text-gray-600">Geographic Causes:</h2>
             <p class="text-left p-2">
-                Description: Despite the internet’s omnipresence, some areas lack high-speed access. Urban cities and most
+                Description: Despite the internet’s omnipresence, some areas lack high-speed access. Urban cities and
+                most
                 suburbs enjoy better coverage, while rural regions often struggle to provide digital services to all
                 residents.
                 Reasons: Geographic limitations, accessibility issues, and financial constraints hinder equal access.
@@ -223,9 +226,11 @@
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
             <h2 class="text-left text-2xl font-medium text-gray-600">Racial, Cultural, and Language Factors:</h2>
             <p class="text-left p-2">
-                Description: Disparities along racial, cultural, and language lines affect internet and technology access.
+                Description: Disparities along racial, cultural, and language lines affect internet and technology
+                access.
                 Families primarily speaking non-English languages at home may find online resources less accessible.
-                Reasons: Similar to wage gaps and disparities in education and healthcare, language barriers play a role.
+                Reasons: Similar to wage gaps and disparities in education and healthcare, language barriers play a
+                role.
             </p>
         </div>
         <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
@@ -236,40 +241,22 @@
                 Reasons: While education about technology helps, respecting personal preferences is essential12.
             </p>
         </div>
+        <div>
+            <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+                    id="google-form"
+                    onclick="window.open('./feedback.html')">
+                Click here to give feedback for the website
+            </button>
+        </div>
     </div>
 </section>
-    <button class="items-center justify-center w-full rounded-md" onclick="window.open('./feedback.html')">
-        <!--        <iframe class="w-full h-full overflow"-->
-        <!--                height="3556" width="3556"-->
-        <!--                src="https://docs.google.com/forms/d/e/1FAIpQLSckJp6i3A7jsqKFfmMj0G8smr5zrb8WqlYnSHbYPtlErC5yBA/viewform?embedded=true">載入中…-->
-        <!--        </iframe>-->
-        Click here to give feedback for the website
-    </button>
-</section>
-
 <footer>
     <div class="w-full bg-gray-900 text-gray-500 px-10">
         <div class="container mx-auto px-4 py-6 text-center">
-            <p id="copyright" id="copyright-text">
+            <p id="copyright">
                 Copyright © 2024 The Digital Divide Movement
                 All Rights Reserved.
             </p>
         </div>
     </div>
 </footer>
-<script>
-    //This make the photo guider lead to another page of the web
-    document.getElementById('ofn').addEventListener('click', function () {
-        window.location.href = 'OFN.html';
-    });
-    document.getElementById('Trio').addEventListener('click', function () {
-        window.location.href = 'TRIO.html';
-    });
-    document.getElementById('Ein').addEventListener('click', function () {
-        window.location.href = '  EPK.html';
-    });
-    document.getElementById('Rus').addEventListener('click', function () {
-        window.location.href = 'https://www.youtube.com/watch?v=aMi3ky04XqY';
-    });
-</script>
-</html>
