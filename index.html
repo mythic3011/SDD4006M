@@ -1,125 +1,275 @@
 <!doctype html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Main Page</title>
-<link rel="stylesheet" href="Main.css" />
-
-<body >
-<div id="flex-container">
-<div id="header"><h1><p align="center"> <img src="digi/logo.PNG" class="responsive-image2" /> </p></h1>
-    </div>
-<div class="navbar" >
-  <img src="digi/logo.PNG" class="photo"/>
-
-  
-    </div>
-    </div>
-
-</div>
-
-<div id="t3bro">
-    <div id="ofn"><h3><p align="center">Difficulties</p></h3>
-        
-        
-        
-        
-        
+<head lang="en">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+    <title>Main Page | The Digital Divide</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta content="1 month" name="revisit-after">
+    <meta content="general" name="rating">
+    <meta content="English" name="language">
+    <meta content="Main Page | The Digital Divide" name="title">
+    <meta content="index, follow" name="robots">
+    <meta content="index, follow" name="googlebot">
+    <link href="img/logo.PNG" rel="icon" type="image/x-icon">
+    <meta content="The Digital Divide is a global movement that aims to create a more inclusive digital landscape for all people. It is a movement that seeks to address the digital divide by promoting digital literacy, access to technology, and social inclusion. The Digital Divide is a global movement that aims to create a more inclusive digital landscape for all people. It is a movement that seeks to address the digital divide by promoting digital literacy, access to technology, and social inclusion."
+          name="description">
+    <meta content="The Digital Divide, Digital Divide, Digital Literacy, Digital Inclusion, Social Inclusion, Access to Technology, Inclusive Society, Inclusive Economy, Digital Equity, Digital Justice, Digital Rights, Digital Freedom, Digital Democracy, Digital Diversity, Social Justice, Social Equity, Social Inclusion, Access to Technology, Inclusive Society, Inclusive Economy, Digital Equity, Digital Justice, Digital Rights, Digital Freedom, Digital Democracy, Digital Diversity, The Digital Divide, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement,
+    The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital Divide Movement, The Digital
+    " name="keywords">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<header class="border-b border-gray-300 py-4">
+    <nav class="navbar" id="navbar" x-data="{navbarOpen:false}">
+        <div class="container flex flex-wrap px-4 py-2 mx-auto flex items-center justify-between lg:space-x-4">
+            <a class="block mt-4 hover:underline hover:no-underline transition duration-200 ease-in-out border-2 border-transparent border-solid rounded-lg px-4 py-2"
+               href="index.html">
+                <img alt="" class="left-0 top-0 w-12 h-12" src="img/logo.PNG">
+            </a>
+            <button @click="navbarOpen = !navbarOpen"
+                    class="lg:hidden inline-flex items-center justify-center w-10 h-10 ml-auto text-black border rounded-md outline-none lg:hidden focus:outline-none">
+                <svg class="right-0 top-0 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"
+                          stroke-width="2"></path>
+                </svg>
+            </button>
+            <div :class="{'hidden':!navbarOpen,'flex':navbarOpen}"
+                 class="items-center justify-center w-full lg:inline-flex lg:w-auto mt-2 lg:mt-0">
+                <ul class="flex flex-col lg:flex-row items-center">
+                    <li>
+                        <a class="flex px-4 py-1 transition hover:bg-gray-200 rounded-md active bg-gradient-to-r border-t-2 border-green-400 bg-gradient-to-br from-indigo-400 to-green-500 hover:via-blue-700 hover:to-purple-700 text-white round-md flex md:inline-flex font-medium text-lg cursor-pointer hover:shadow-lg transition"
+                           href="index.html"
+                           id="navbar-home">
+                            Home</a>
+                    </li>
+                    <li>
+                        <a class="flex px-4 py-2 transition hover:bg-gray-200 rounded-md" href="feedback.html"
+                           id="navbar-menu">feedback</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+</header>
+<section class="hero py-4 py-8 md:px-24">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">
+        The Digital Divide: Navigating Socio-Economic Gaps in Digital Learning</h1>
+    <div class="about-div" id="about-div">
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600" id="about-h2-1">Situation In Hong Kong</h2>
+            <p class="text-left p-2" id="about-p1">
+                The COVID-19 pandemic has reshaped our lives, ushering in digital learning, remote work, and online
+                services as
+                essential components of our daily routines. However, this transition has also exposed existing
+                disparities in
+                access
+                to technology, creating what we commonly refer to as the “digital divide.” In Hong Kong, this divide
+                affects
+                various
+                aspects of life, including education, employment, and social participation. </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600" id="about-h2-2">The Impact on Education</h2>
+            <p class="text-left p-2" id="about-p2">
+                During the pandemic, schools worldwide faced closures to curb the virus’s spread. Hong Kong was no
+                exception,
+                with
+                over 1.6 billion learners unable to attend school1. To mitigate learning losses, governments introduced
+                digital
+                platforms for remote education. However, not all students had equal access to these resources. Affluent
+                families
+                with better digital infrastructure had a smoother transition, while low-income families faced challenges
+                due to
+                limited access to devices and the internet.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Widening Gaps</h2>
+            <p class="text-left p-2">
+                Research shows that digital learning significantly mediates the association between socio-economic
+                status (SES)
+                and
+                educational performance1. Before the pandemic, the indirect effects of digital learning were not
+                significant.
+                However, during school closures, these effects became pronounced. Students from lower SES families
+                struggled to
+                keep
+                up, exacerbating existing inequalities. As schools reopened, the divide persisted but diminished
+                somewhat.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600" id="about-h2-3">Trust and Security Concerns</h2>
+            <p class="text-left p-2" id="about-p3">
+                In Hong Kong, the government launched several e-services during the pandemic, including online
+                vaccination
+                registration, electronic consumption vouchers, and social distancing apps. However, the underprivileged
+                expressed
+                reservations about using these services due to trust and security concerns2. Bridging the digital divide
+                requires
+                addressing these apprehensions and ensuring that everyone can benefit from technological advancements.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600" id="about-h2-4">Bridging the Gap</h2>
+            <p class="text-left p-2" id="about-p4">
+                To bridge the digital divide, we must take collective action:
+                <br>
+                <b>Equitable Access:</b> Ensure that all citizens, regardless of their socio-economic background, have
+                access to
+                digital devices and reliable internet connections.
+                <br>
+                <b>Digital Literacy Programs:</b> Invest in educational programs that enhance digital literacy skills.
+                These
+                programs empower individuals to navigate technology effectively.
+                <br>
+                <b>Affordable Services:</b> Advocate for affordable internet plans and device subsidies to make
+                technology accessible to everyone.
+                <br>
+                <b>Community Support:</b> Collaborate with community organizations to provide training, support, and
+                resources for marginalized groups.
+            </p>
+            <br>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600" id="about-h2-5">Conclusion</h2>
+            <p class="text-left p-2" id="about-p5">
+                The digital divide is not insurmountable. By prioritizing equity, education, and community engagement,
+                we can create a more inclusive digital
+                landscape for all Hong Kong citizens.
+                Remember that addressing the digital divide requires collective efforts. Let’s work together to ensure
+                that no one is left behind in our increasingly digital world! 🌐📚📲12</p>
+        </div>
+    </div>
+</section>
+<section class="hero py-4 py-8 md:px-24">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">
+        Major Age groups</h1>
+    <div class="about-div">
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Younger Generation (Aged 15-24):</h2>
+            <p class="text-left p-2">
+                Access to the Internet: Younger respondents generally have better access to the internet than older
+                generations. For instance, in Indonesia, 90% of young people have internet access, compared to 56% of
+                those aged 40 and older.
+                Daily Internet Usage: Younger individuals tend to use the internet more frequently, with rates of daily
+                usage significantly higher than older counterparts. In Japan, 96% of young respondents use the internet
+                daily, while only 58% of older respondents do so.
+                Optimism and Digital Literacy: Young people are optimistic about the future and see the benefits of life
+                online. They are also more digitally literate, navigating social media and online platforms with ease1.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Middle-Aged Generation (Aged 40-54):</h2>
+            <p class="text-left p-2">
+                Varied Access: This group falls between the younger and older generations. Their internet access rates
+                and usage patterns vary based on individual circumstances and location.
+                Digital Literacy: Middle-aged individuals may have varying levels of digital literacy, depending on
+                their exposure to technology and education.
+                Importance of Relevant Content: Ensuring relevant online content is crucial for engaging this age group
+                and bridging the divide1.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600" id="about-h2-2">Older Generation (Aged 55 and
+                Over):</h2>
+            <p class="text-left p-2" id="about-p2">
+                Challenges in Access: Older adults face challenges related to internet access. While some are
+                tech-savvy, others struggle due to limited exposure or lack of familiarity.
+                Educational Impact: Bridging the digital divide for older generations requires expanding digital
+                literacy education. Empowering them with essential skills can enhance their quality of life and
+                participation in the digital world2.
+                Perceptions and Attitudes: Older individuals may view technology differently, emphasizing face-to-face
+                interactions over digital communication.
+            </p>
+        </div>
+    </div>
+    </section>
+<section class="hero py-4 py-8 md:px-24">
+    <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-8">REASONS OF THE DIVIDE</h1>
+    <div class="about-div">
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Age-Related Issues:</h2>
+            <p class="text-left p-2">
+                Description: Different age groups have varying levels of access to technology. Younger generations (below
+                thirty) are more likely to be fully connected and digitally literate, while older adults (over sixty-five)
+                may lack access or choose not to use technology.
+                Reasons: Lack of education about technology benefits and lifestyle situations that don’t necessitate
+                connectivity.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Socioeconomic Factors:</h2>
+            <p class="text-left p-2">
+                Description: The digital divide mirrors income, education, and social standing disparities worldwide.
+                People with higher income and education levels tend to have better access to technology and the internet.
+                Reasons: Socioeconomic gaps contribute to unequal access, exacerbating overall inequalities.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Geographic Causes:</h2>
+            <p class="text-left p-2">
+                Description: Despite the internet’s omnipresence, some areas lack high-speed access. Urban cities and most
+                suburbs enjoy better coverage, while rural regions often struggle to provide digital services to all
+                residents.
+                Reasons: Geographic limitations, accessibility issues, and financial constraints hinder equal access.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Racial, Cultural, and Language Factors:</h2>
+            <p class="text-left p-2">
+                Description: Disparities along racial, cultural, and language lines affect internet and technology access.
+                Families primarily speaking non-English languages at home may find online resources less accessible.
+                Reasons: Similar to wage gaps and disparities in education and healthcare, language barriers play a role.
+            </p>
+        </div>
+        <div class="bg-white shadow-lg rounded-lg p-8 mb-8">
+            <h2 class="text-left text-2xl font-medium text-gray-600">Personal Choice:</h2>
+            <p class="text-left p-2">
+                Description: Some individuals simply choose not to engage with the internet. They may not recognize its
+                benefits or prefer an alternative lifestyle.
+                Reasons: While education about technology helps, respecting personal preferences is essential12.
+            </p>
+        </div>
+    </div>
+</section>
+    <button class="items-center justify-center w-full rounded-md" onclick="window.open('./feedback.html')">
+        <!--        <iframe class="w-full h-full overflow"-->
+        <!--                height="3556" width="3556"-->
+        <!--                src="https://docs.google.com/forms/d/e/1FAIpQLSckJp6i3A7jsqKFfmMj0G8smr5zrb8WqlYnSHbYPtlErC5yBA/viewform?embedded=true">載入中…-->
+        <!--        </iframe>-->
+        Click here to give feedback for the website
+    </button>
+</section>
 
-        <div id="Trio"><h3><p align="center"></p></h3> </div>
-
-
-        <div id="Ein"><h3><p align="center">AGE GROUP</font></p></h3>
-          
-       
-            
-            
-            </div>
-             <div id="Rus">
-           <h3><p align="center">digital divide in other area</p></h3>
-            </div>
-
-</div>    
-
-<h1><p align="center">The Digital Divide: Navigating Socio-Economic Gaps in Digital Learning</p></h1>
-    <h2><p>Situation In Hong Kong</p></h2>
-    <p><font size="+1">
-The COVID-19 pandemic has reshaped our lives, ushering in digital learning, remote work, and online services as essential components of our daily routines. However, this transition has also exposed existing disparities in access to technology, creating what we commonly refer to as the “digital divide.” In Hong Kong, this divide affects various aspects of life, including education, employment, and social participation.
-</font>
-</p>
-<br>
-
-<h2><p>
-The Impact on Education</p></h2>
-<p><font size="+1">
-During the pandemic, schools worldwide faced closures to curb the virus’s spread. Hong Kong was no exception, with over 1.6 billion learners unable to attend school1. To mitigate learning losses, governments introduced digital platforms for remote education. However, not all students had equal access to these resources. Affluent families with better digital infrastructure had a smoother transition, while low-income families faced challenges due to limited access to devices and the internet.
-</font>
-</p>
-<br>
-
-<h2><p>
-Widening Gaps</p></h2>
-<p><font size="+1">
-Research shows that digital learning significantly mediates the association between socio-economic status (SES) and educational performance1. Before the pandemic, the indirect effects of digital learning were not significant. However, during school closures, these effects became pronounced. Students from lower SES families struggled to keep up, exacerbating existing inequalities. As schools reopened, the divide persisted but diminished somewhat.
-</font>
-</p>
-<br>
-
-<h2><p>
-Trust and Security Concerns</p></h2>
-<p><font size="+1">
-In Hong Kong, the government launched several e-services during the pandemic, including online vaccination registration, electronic consumption vouchers, and social distancing apps. However, the underprivileged expressed reservations about using these services due to trust and security concerns2. Bridging the digital divide requires addressing these apprehensions and ensuring that everyone can benefit from technological advancements.
-</font>
-</p>
-<br>
-
-<h2><p>
-Bridging the Gap</p></h2>
-<p><font size="+1">
-To bridge the digital divide, we must take collective action:
-<br>
-<b>Equitable Access:</b> Ensure that all citizens, regardless of their socio-economic background, have access to digital devices and reliable internet connections.
-<br>
-<b>Digital Literacy Programs:</b> Invest in educational programs that enhance digital literacy skills. These programs empower individuals to navigate technology effectively.
-<br>
-<b>Affordable Services:</b> Advocate for affordable internet plans and device subsidies to make technology accessible to everyone.
-<br>
-<b>Community Support:</b> Collaborate with community organizations to provide training, support, and resources for marginalized groups.
-</font>
-</p>
-<br>
-<h2><p>
-Conclusion</p></h2>
-<p><font size="+1">
-The digital divide is not insurmountable. By prioritizing equity, education, and community engagement, we can create a more inclusive digital landscape for all Hong Kong citizens.
-
-Remember that addressing the digital divide requires collective efforts. Let’s work together to ensure that no one is left behind in our increasingly digital world! 🌐📚📲12
-</font></p>
-</div>
-<div class="bottomDiv">Make From<br>
-    <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSckJp6i3A7jsqKFfmMj0G8smr5zrb8WqlYnSHbYPtlErC5yBA/viewform?embedded=true" width="640" height="3556" frameborder="0" marginheight="0" marginwidth="0">載入中…</iframe>
-    
-   </div>
-
-
-</body>
-
+<footer>
+    <div class="w-full bg-gray-900 text-gray-500 px-10">
+        <div class="container mx-auto px-4 py-6 text-center">
+            <p id="copyright" id="copyright-text">
+                Copyright © 2024 The Digital Divide Movement
+                All Rights Reserved.
+            </p>
+        </div>
+    </div>
+</footer>
 <script>
-
     //This make the photo guider lead to another page of the web
-  document.getElementById('ofn').addEventListener('click', function() {
+    document.getElementById('ofn').addEventListener('click', function () {
         window.location.href = 'OFN.html';
     });
-    document.getElementById('Trio').addEventListener('click', function() {
+    document.getElementById('Trio').addEventListener('click', function () {
         window.location.href = 'TRIO.html';
     });
-    document.getElementById('Ein').addEventListener('click', function() {
+    document.getElementById('Ein').addEventListener('click', function () {
         window.location.href = '  EPK.html';
     });
-    document.getElementById('Rus').addEventListener('click', function() {
+    document.getElementById('Rus').addEventListener('click', function () {
         window.location.href = 'https://www.youtube.com/watch?v=aMi3ky04XqY';
     });
-
-    
-    </script>
+</script>
 </html>
